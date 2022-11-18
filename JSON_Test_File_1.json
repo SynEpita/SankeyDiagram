@@ -1,33 +1,8 @@
 {
-    "nodes":[
-    {"node":0,"name":"United States", "color": "#FFC0CB"},
-    {"node":1,"name":"International", "color": "#FFC0CB"},
-    {"node":2,"name":"Revenue", "color": "#57D53B"},
-    {"node":3,"name":"Gross Profit", "color": "#57D53B"},
-    {"node":4,"name":"Operating Profit", "color": "#57D53B"},
-    {"node":5,"name":"Other", "color": "#57D53B"},
-    {"node":6,"name":"Net Profit", "color": "#57D53B"},
-    {"node":7,"name":"Tax", "color": "#fb3b1e"},
-    {"node":8,"name":"Operating Expense", "color": "#fb3b1e"},
-    {"node":9,"name":"SM", "color": "#fb3b1e"},
-    {"node":10,"name":"Product dev", "color": "#fb3b1e"},
-    {"node":11,"name":"GA", "color": "#fb3b1e"},
-    {"node":12,"name":"Support", "color": "#fb3b1e"},
-    {"node":13,"name":"Cost of revenue", "color": "#fb3b1e"}
-    ],
-    "links":[
-    {"source":0,"target":2,"value":1.2},
-    {"source":1,"target":2,"value":1.7},
-    {"source":2,"target":3,"value":2.5},
-    {"source":2,"target":13,"value":0.4},
-    {"source":3,"target":4,"value":1.2},
-    {"source":2,"target":8,"value":1.3},
-    {"source":4,"target":6,"value":1.2},
-    {"source":4,"target":7,"value":0.056},
-    {"source":5,"target":6,"value":0.066},
-    {"source":8,"target":9,"value":0.4},
-    {"source":8,"target":10,"value":0.4},
-    {"source":8,"target":11,"value":0.3},
-    {"source":8,"target":10,"value":0.2}
-    ]
+    "nodes":{
+        "name": ["United States", "International","Revenue","Gross Profit","Operating Profit","Net Profit","Tax","Operating Expense","SM","Product dev","GA","Support","Cost of revenue"],
+    },
+    "links":{"source":[0,1,2,2,3,2,4,4,5,8,8,8,8], "target":[2,2,3,13,4,8,6,7,6,9,10,11,10], 
+    "value": [1.2, 1.7,2.5,0.4,1.2,1.3,1.2,0.056,0.066,0.4,0.4,0.3,0.2]}
+    
 }
