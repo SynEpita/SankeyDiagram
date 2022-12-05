@@ -27,9 +27,13 @@ const addPoints = (request, response) => {
     })
 }
 
-
+const FakePush = (request, response) => {
+    const { } = request.body
+    response.status(201).send('Done')
+}
 
 module.exports = {
     addPoints,
-    getPoint
+    getPoint,
+    FakePush
 }
