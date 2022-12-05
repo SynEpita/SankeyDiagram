@@ -8,7 +8,6 @@ const pool = new Pool({
 })
 
 const getPoint = (request, response) => {
-    const id = parseInt(request.params.id)
     pool.query('SELECT * FROM points', (error, results) => {
         if (error) {
             throw error
