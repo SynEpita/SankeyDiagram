@@ -27,7 +27,7 @@ const addPoints = (request, response) => {
     })
 }
 
-const FakePush = (request, response) => {
+const testPush = (request, response) => {
     const { } = request.body
     response.status(201).send('Done')
 }
@@ -35,5 +35,5 @@ const FakePush = (request, response) => {
 module.exports = {
     addPoints,
     getPoint,
-    FakePush
+    testPush
 }
